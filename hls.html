@@ -2,9 +2,14 @@
 <head>
 <title>hls.js demo</title>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<style>
+#video {
+  width: 800px;
+}
+</style>
 </head>
 <body>
-<video id="video"></video>
+<video id="video" controls="controls"></video>
 <script>
 if (Hls.isSupported()) {
   var video = document.getElementById('video');
